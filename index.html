@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yelp House Cup</title>
+
+	<style>
+		body{
+			padding:0;margin:0;
+			background: url('hp-board-bg.jpg');
+			font-family: 'acknowledgementmedium';
+		}
+		canvas{
+			width: 1600px;
+			height: 1200px;
+			border: black 1px solid;
+			margin: 0;
+			padding: 0;
+		}
+		.hg-overlay{position:absolute;top:0;left:0}
+
+		.panel{
+			position: absolute;
+			text-align: center;
+			left: 130px;
+			top: 765px;
+			width: 1300px;
+		}
+		.panel .house-info{
+			margin: 0;
+			width: 213px;
+			display: inline-block;
+		}
+		.panel .house-name{
+			font-size: 18px;
+			margin: 20px 0 0;
+		}
+
+		.panel .score{
+			font-size: 40px;
+			margin: 0;
+		}
+
+		@font-face {
+			font-family: 'acknowledgementmedium';
+			src: url('acknowledgement-webfont.eot');
+			src: url('acknowledgement-webfont.eot?#iefix') format('embedded-opentype'),
+			url('acknowledgement-webfont.woff2') format('woff2'),
+			url('acknowledgement-webfont.woff') format('woff'),
+			url('acknowledgement-webfont.ttf') format('truetype'),
+			url('acknowledgement-webfont.svg#acknowledgementmedium') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+</head>
+
+<body>
+<article class="main-content">
+
+	<section class="sandbox">
+		<canvas id="canv" width="1600" height="1200"></canvas>
+	</section>
+	<img src="hourglasses.png" class="hg-overlay"/>
+	
+	<section class="panel">
+		<section class="house-info">
+			<h2 class="house-name">Gryphendor</h2>
+			<div class="score">23</div>
+		</section>
+
+
+	</section>
+</article>
+
+
+<script src="jquery.min.js"></script>
+<script src="quadtree.js"></script>
+<script src="Ball.js"></script>
+<script src="Wall.js"></script>
+<script src="BodyManager.js"></script>
+<script src="scoreboard.js"></script>
+
+</body>
+</html>
